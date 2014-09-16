@@ -1,3 +1,7 @@
+" Require newer version.
+set nocompatible
+
+" Turn on highlighting for all supported files.
 syntax on
 
 " Show the title.
@@ -35,6 +39,17 @@ set number
 
 " Show maximum line length limit.
 set colorcolumn=80
+
+" Turn off file type detection temporarily (for Vundle's sake).
+filetype off
+
+" Add Vundle to the runtime path. Start Vundle.
+set rtp+=~/vimfiles/bundle/Vundle.vim/
+let path='~/vimfiles/bundle'
+call vundle#begin(path)
+Plugin 'gmarik/Vundle.vim'
+Plugin 'PProvost/vim-ps1'
+call vundle#end()
 
 filetype on
 filetype plugin on
