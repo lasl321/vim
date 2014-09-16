@@ -49,6 +49,7 @@ let path='~/vimfiles/bundle'
 call vundle#begin(path)
 Plugin 'gmarik/Vundle.vim'
 Plugin 'PProvost/vim-ps1'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
 
 filetype on
@@ -56,9 +57,9 @@ filetype plugin on
 filetype indent on
 
 if has("gui_running")
-    colorscheme torte
+    colorscheme solarized 
 
-    " set background=dark
+    set background=dark
 
     " Turn on the horizontal scrollbar.
     set guioptions+=b
