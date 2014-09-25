@@ -45,6 +45,8 @@ filetype off
 
 " Add Vundle to the runtime path. Start Vundle.
 set rtp+=~/vimfiles/bundle/Vundle.vim/
+set rtp+=~/vimfiles/vim-ycm-733de48-windows-x86/
+
 let path='~/vimfiles/bundle'
 call vundle#begin(path)
 Plugin 'gmarik/Vundle.vim'
